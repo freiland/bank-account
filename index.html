@@ -10,7 +10,52 @@
   <title>Bank Account</title>
 </head>
 <body>
-
-  
+  <div class="container">
+    <div class="jumbotron">
+      <h4 class="text-center">Welcome to the Epicodus Credit Union!</h4>
+    </div>
+    <div class="row mx-auto">
+      <!-- Register a New Account -->
+      <div class="col-md-5 card bg-light my-2 mx-4 p-4">
+        <h5>Register a new account:</h5>
+        <form id="registerAcct">
+          <div class="formgroup">
+            <label for="name">Name:</label>
+            <input id="name" type="text" class="form-control">
+          </div>
+          <br>
+          <div class="formgroup">
+            <label for="initialDeposit">Initial Deposit</label>
+            <input id="initialDeposit" type="text" class="form-control">
+          </div>
+          <br>
+          <button type="submit" class="btn-sm btn-primary">Submit</button>
+        </form>
+      </div>
+      <!-- Deposit or Withdrawal -->
+      <div class="col-md-5 card bg-light my-2 mx-4 p-4">
+        <h5>Deposit or withdrawl funds:</h5>
+        <form id="manageFunds">
+          <div class="formgroup">
+            <label for="deposit">Deposit:</label>
+            <input id="deposit" type="text" class="form-control">
+          </div>
+          <br>
+          <div class="formgroup">
+            <label for="withdrawl">Withdrawal:</label>
+            <input id="withdrawal" type="text" class="form-control">
+          </div>
+          <br>
+          <button type="submit" class="btn-sm btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Current Balance -->
+    <div class="card col-5 bg-light mx-auto my-4 p-2 text-center">
+      <br>
+      <h5>Current Balance:</h5>
+      <p class="card currentBalanceCard mx-auto text-left">  $  <span id="currentBalance"></span></p>
+    </div>
+  </div>
 </body>
 </html>
